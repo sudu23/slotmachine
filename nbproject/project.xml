@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://www.netbeans.org/ns/project/1">
+    <type>com.microchip.mplab.nbide.embedded.makeproject</type>
+    <configuration>
+        <data xmlns="http://www.netbeans.org/ns/make-project/1">
+            <name>Slotmachine_V1.4.0</name>
+            <creation-uuid>c6b1b8cf-907d-452d-be9e-9d13a5bc4003</creation-uuid>
+            <make-project-type>0</make-project-type>
+            <sourceEncoding>ISO-8859-1</sourceEncoding>
+            <make-dep-projects/>
+            <sourceRootList>
+                <sourceRootElem>../../../Vorlage/Slotmachine_FW_V2.0.X</sourceRootElem>
+            </sourceRootList>
+            <confList>
+                <confElem>
+                    <name>default</name>
+                    <type>2</type>
+                </confElem>
+            </confList>
+            <formatting>
+                <project-formatting-style>false</project-formatting-style>
+            </formatting>
+        </data>
+    </configuration>
+</project>
