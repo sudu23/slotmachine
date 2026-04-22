@@ -36,8 +36,8 @@
         </logicalFolder>
       </logicalFolder>
       <itemPath>main.h</itemPath>
-      <itemPath>../../../Vorlage/Slotmachine_FW_V2.0.X/slotmachine.h</itemPath>
-      <itemPath>../../../Vorlage/Slotmachine_FW_V2.0.X/wuerfel.h</itemPath>
+      <itemPath>wuerfel.h</itemPath>
+      <itemPath>slotmachine.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
@@ -73,12 +73,13 @@
         </logicalFolder>
       </logicalFolder>
       <itemPath>main.c</itemPath>
-      <itemPath>../../../Vorlage/Slotmachine_FW_V2.0.X/slotmachine.c</itemPath>
-      <itemPath>../../../Vorlage/Slotmachine_FW_V2.0.X/wuerfel.c</itemPath>
+      <itemPath>wuerfel.c</itemPath>
+      <itemPath>slotmachine.c</itemPath>
     </logicalFolder>
   </logicalFolder>
   <sourceRootList>
     <Elem>../../../Vorlage/Slotmachine_FW_V2.0.X</Elem>
+    <Elem>.</Elem>
   </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
