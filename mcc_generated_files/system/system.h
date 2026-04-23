@@ -12,7 +12,7 @@
  * @version Package Version 4.3.0
 */
 /*
-© [2025] Microchip Technology Inc. and its subsidiaries.
+© [2026] Microchip Technology Inc. and its subsidiaries.
 
     Subject to your compliance with these terms, you may use Microchip 
     software and any derivatives exclusively with Microchip products. 
@@ -45,6 +45,7 @@ extern "C" {
 #include "../system/pins.h"
 #include "../system/interrupt.h"
 #include "../system/clock.h"
+#include "../timer/tca0.h"
 #include "../timer/tcb0.h"
 /**
  * @ingroup systemdriver

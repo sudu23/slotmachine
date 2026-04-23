@@ -41,6 +41,13 @@ uint8_t Mode = 0;
 /********************************************/
 void setup(void)
 {
+    TCA0_Start();
+    TCA0_PeriodSet(19999);
+    DELAY_milliseconds(200);
+    TCA0_PeriodSet(3999);
+    DELAY_milliseconds(200);
+    TCA0_Stop();
+    
     if(PORTA_get_pin_level(0) == true){
         Mode = 0; // Taster nicht gedrueckt: Modus 0 (Würfel)
     } else {

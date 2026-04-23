@@ -12,7 +12,7 @@
 */
 
 /*
-© [2025] Microchip Technology Inc. and its subsidiaries.
+© [2026] Microchip Technology Inc. and its subsidiaries.
 
     Subject to your compliance with these terms, you may use Microchip 
     software and any derivatives exclusively with Microchip products. 
@@ -34,6 +34,7 @@
 
 #include "../pins.h"
 
+static void (*IO_PC2_InterruptHandler)(void);
 static void (*IO_PA0_InterruptHandler)(void);
 static void (*IO_PA1_InterruptHandler)(void);
 static void (*IO_PC1_InterruptHandler)(void);
@@ -54,7 +55,7 @@ void PIN_MANAGER_Initialize()
 
   /* DIR Registers Initialization */
     PORTA.DIR = 0x0;
-    PORTC.DIR = 0xA;
+    PORTC.DIR = 0xE;
     PORTD.DIR = 0xF0;
     PORTF.DIR = 0x0;
 
@@ -96,12 +97,13 @@ void PIN_MANAGER_Initialize()
     PORTMUX.CCLROUTEA = 0x0;
     PORTMUX.EVSYSROUTEA = 0x0;
     PORTMUX.SPIROUTEA = 0x0;
-    PORTMUX.TCAROUTEA = 0x0;
+    PORTMUX.TCAROUTEA = 0x2;
     PORTMUX.TCDROUTEA = 0x0;
     PORTMUX.TWIROUTEA = 0x0;
     PORTMUX.USARTROUTEA = 0x0;
 
   // register default ISC callback functions at runtime; use these methods to register a custom function
+    IO_PC2_SetInterruptHandler(IO_PC2_DefaultInterruptHandler);
     IO_PA0_SetInterruptHandler(IO_PA0_DefaultInterruptHandler);
     IO_PA1_SetInterruptHandler(IO_PA1_DefaultInterruptHandler);
     IO_PC1_SetInterruptHandler(IO_PC1_DefaultInterruptHandler);
@@ -112,6 +114,19 @@ void PIN_MANAGER_Initialize()
     IO_PD7_SetInterruptHandler(IO_PD7_DefaultInterruptHandler);
 }
 
+/**
+  Allows selecting an interrupt handler for IO_PC2 at application runtime
+*/
+void IO_PC2_SetInterruptHandler(void (* interruptHandler)(void)) 
+{
+    IO_PC2_InterruptHandler = interruptHandler;
+}
+
+void IO_PC2_DefaultInterruptHandler(void)
+{
+    // add your IO_PC2 interrupt custom code
+    // or set custom function using IO_PC2_SetInterruptHandler()
+}
 /**
   Allows selecting an interrupt handler for IO_PA0 at application runtime
 */
@@ -234,6 +249,10 @@ ISR(PORTA_PORT_vect)
 ISR(PORTC_PORT_vect)
 { 
     // Call the interrupt handler for the callback registered at runtime
+    if(VPORTC.INTFLAGS & PORT_INT2_bm)
+    {
+       IO_PC2_InterruptHandler(); 
+    }
     if(VPORTC.INTFLAGS & PORT_INT1_bm)
     {
        IO_PC1_InterruptHandler(); 
