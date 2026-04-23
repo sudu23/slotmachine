@@ -57,6 +57,180 @@
  */
  /* cppcheck-suppress misra-c2012-2.5 */  
 #define TCA0_CLOCK_FREQ (4000000UL)
+/**
+ * @ingroup tca0_normal
+ * @brief Defines the Custom Name for the \ref TCA0_MAX_COUNT.
+ */
+ /* cppcheck-suppress misra-c2012-2.5 */  
+#define FREQUENCYOUTPUTTIMER_MAX_COUNT TCA0_MAX_COUNT
+/**
+ * @ingroup tca0_normal
+ * @brief Defines the Custom Name for the \ref TCA0_CLOCK_FREQ.
+ */
+ /* cppcheck-suppress misra-c2012-2.5 */  
+#define FREQUENCYOUTPUTTIMER_CLOCK_FREQ TCA0_CLOCK_FREQ
+/**
+ * @ingroup tca0_normal
+ * @brief Defines the Custom Name for the \ref TCA0_Initialize.
+ */
+ /* cppcheck-suppress misra-c2012-2.5 */  
+#define FrequencyOutputTimer_Initialize TCA0_Initialize
+/**
+ * @ingroup tca0_normal
+ * @brief Defines the Custom Name for the \ref TCA0_Deinitialize.
+ */
+ /* cppcheck-suppress misra-c2012-2.5 */  
+#define FrequencyOutputTimer_Deinitialize TCA0_Deinitialize
+/**
+ * @ingroup tca0_normal
+ * @brief Defines the Custom Name for the \ref TCA0_Start.
+ */
+ /* cppcheck-suppress misra-c2012-2.5 */  
+#define FrequencyOutputTimer_Start TCA0_Start
+/**
+ * @ingroup tca0_normal
+ * @brief Defines the Custom Name for the \ref TCA0_Stop.
+ */
+ /* cppcheck-suppress misra-c2012-2.5 */  
+#define FrequencyOutputTimer_Stop TCA0_Stop
+/**
+ * @ingroup tca0_normal
+ * @brief Defines the Custom Name for the \ref TCA0_CounterSet.
+ */
+ /* cppcheck-suppress misra-c2012-2.5 */  
+#define FrequencyOutputTimer_CounterSet TCA0_CounterSet
+/**
+ * @ingroup tca0_normal
+ * @brief Defines the Custom Name for the \ref TCA0_CounterGet.
+ */
+ /* cppcheck-suppress misra-c2012-2.5 */  
+#define FrequencyOutputTimer_CounterGet TCA0_CounterGet
+/**
+ * @ingroup tca0_normal
+ * @brief Defines the Custom Name for the \ref TCA0_FrequencySet.
+ */
+ /* cppcheck-suppress misra-c2012-2.5 */  
+#define FrequencyOutputTimer_FrequencySet TCA0_FrequencySet
+/**
+ * @ingroup tca0_normal
+ * @brief Defines the Custom Name for the \ref TCA0_FrequencyGet.
+ */
+ /* cppcheck-suppress misra-c2012-2.5 */  
+#define FrequencyOutputTimer_FrequencyGet TCA0_FrequencyGet
+/**
+ * @ingroup tca0_normal
+ * @brief Defines the Custom Name for the \ref TCA0_WO1OffsetSet.
+ */
+ /* cppcheck-suppress misra-c2012-2.5 */  
+#define FrequencyOutputTimer_WO1OffsetSet TCA0_WO1OffsetSet
+/**
+ * @ingroup tca0_normal
+ * @brief Defines the Custom Name for the \ref TCA0_WO1OffsetGet.
+ */
+ /* cppcheck-suppress misra-c2012-2.5 */  
+#define FrequencyOutputTimer_WO1OffsetGet TCA0_WO1OffsetGet
+/**
+ * @ingroup tca0_normal
+ * @brief Defines the Custom Name for the \ref TCA0_WO2OffsetSet.
+ */
+ /* cppcheck-suppress misra-c2012-2.5 */  
+#define FrequencyOutputTimer_WO2OffsetSet TCA0_WO2OffsetSet
+/**
+ * @ingroup tca0_normal
+ * @brief Defines the Custom Name for the \ref TCA0_WO2OffsetGet.
+ */
+ /* cppcheck-suppress misra-c2012-2.5 */  
+#define FrequencyOutputTimer_WO2OffsetGet TCA0_WO2OffsetGet
+/**
+ * @ingroup tca0_normal
+ * @brief Defines the Custom Name for the \ref TCA0_MaxCountGet.
+ */
+ /* cppcheck-suppress misra-c2012-2.5 */  
+#define FrequencyOutputTimer_MaxCountGet TCA0_MaxCountGet
+/**
+ * @ingroup tca0_normal
+ * @brief Defines the Custom Name for the \ref TCA0_ModeSet.
+ */
+ /* cppcheck-suppress misra-c2012-2.5 */  
+#define FrequencyOutputTimer_ModeSet TCA0_ModeSet
+/**
+ * @ingroup tca0_normal
+ * @brief Defines the Custom Name for the \ref TCA0_OverflowStatusClear.
+ */
+ /* cppcheck-suppress misra-c2012-2.5 */  
+#define FrequencyOutputTimer_OverflowStatusClear TCA0_OverflowStatusClear
+/**
+ * @ingroup tca0_normal
+ * @brief Defines the Custom Name for the \ref TCA0_OverflowStatusGet.
+ */
+ /* cppcheck-suppress misra-c2012-2.5 */  
+#define FrequencyOutputTimer_OverflowStatusGet TCA0_OverflowStatusGet
+/**
+ * @ingroup tca0_normal
+ * @brief Defines the Custom Name for the \ref TCA0_CMP0MatchStatusClear.
+ */
+ /* cppcheck-suppress misra-c2012-2.5 */  
+#define FrequencyOutputTimer_CMP0MatchStatusClear TCA0_CMP0MatchStatusClear
+/**
+ * @ingroup tca0_normal
+ * @brief Defines the Custom Name for the \ref TCA0_CMP0MatchStatusGet.
+ */
+ /* cppcheck-suppress misra-c2012-2.5 */  
+#define FrequencyOutputTimer_CMP0MatchStatusGet TCA0_CMP0MatchStatusGet
+/**
+ * @ingroup tca0_normal
+ * @brief Defines the Custom Name for the \ref TCA0_CMP1MatchStatusClear.
+ */
+ /* cppcheck-suppress misra-c2012-2.5 */  
+#define FrequencyOutputTimer_CMP1MatchStatusClear TCA0_CMP1MatchStatusClear
+/**
+ * @ingroup tca0_normal
+ * @brief Defines the Custom Name for the \ref TCA0_CMP1MatchStatusGet.
+ */
+ /* cppcheck-suppress misra-c2012-2.5 */  
+#define FrequencyOutputTimer_CMP1MatchStatusGet TCA0_CMP1MatchStatusGet
+/**
+ * @ingroup tca0_normal
+ * @brief Defines the Custom Name for the \ref TCA0_CMP2MatchStatusClear.
+ */
+ /* cppcheck-suppress misra-c2012-2.5 */  
+#define FrequencyOutputTimer_CMP2MatchStatusClear TCA0_CMP2MatchStatusClear
+/**
+ * @ingroup tca0_normal
+ * @brief Defines the Custom Name for the \ref TCA0_CMP2MatchStatusGet.
+ */
+ /* cppcheck-suppress misra-c2012-2.5 */  
+#define FrequencyOutputTimer_CMP2MatchStatusGet TCA0_CMP2MatchStatusGet
+/**
+ * @ingroup tca0_normal
+ * @brief Defines the Custom Name for the \ref TCA0_Tasks.
+ */
+ /* cppcheck-suppress misra-c2012-2.5 */  
+#define FrequencyOutputTimer_Tasks TCA0_Tasks
+/**
+ * @ingroup tca0_normal
+ * @brief Defines the Custom Name for the \ref TCA0_OverflowCallbackRegister.
+ */
+ /* cppcheck-suppress misra-c2012-2.5 */  
+#define FrequencyOutputTimer_OverflowCallbackRegister TCA0_OverflowCallbackRegister
+/**
+ * @ingroup tca0_normal
+ * @brief Defines the Custom Name for the \ref TCA0_Compare0CallbackRegister.
+ */
+ /* cppcheck-suppress misra-c2012-2.5 */  
+#define FrequencyOutputTimer_Compare0CallbackRegister TCA0_Compare0CallbackRegister
+/**
+ * @ingroup tca0_normal
+ * @brief Defines the Custom Name for the \ref TCA0_Compare1CallbackRegister.
+ */
+ /* cppcheck-suppress misra-c2012-2.5 */  
+#define FrequencyOutputTimer_Compare1CallbackRegister TCA0_Compare1CallbackRegister
+/**
+ * @ingroup tca0_normal
+ * @brief Defines the Custom Name for the \ref TCA0_Compare2CallbackRegister.
+ */
+ /* cppcheck-suppress misra-c2012-2.5 */  
+#define FrequencyOutputTimer_Compare2CallbackRegister TCA0_Compare2CallbackRegister
 
 /**
  * @ingroup tca0_normal
@@ -116,84 +290,51 @@ void TCA0_CounterSet(uint16_t count);
 
 /**
  * @ingroup tca0_normal
- * @brief Returns the current period value.
- * @pre Initialize the TCA0 with TCA0__Initialize() before calling this API.
+ * @brief Sets the frequency count value.
+ * @param count - Counter value to be written to the CMP0 register
+ * @return None.
+ */
+void TCA0_FrequencySet(uint16_t count);
+
+/**
+ * @ingroup tca0_normal
+ * @brief Returns the frequency count value.
  * @param None.
- * @return Period value from the PER register
+ * @return Frequency count value from the CMP0 register
  */
-uint16_t TCA0_PeriodGet(void);
+uint16_t TCA0_FrequencyGet(void);
 
 /**
  * @ingroup tca0_normal
- * @brief Sets the period value.
- * @pre Initialize the TCA0 with TCA0__Initialize() before calling this API.
- * @param periodVal - Period count value written to the PER register
+ * @brief Sets the WO1 offset count value.
+ * @param count - Offset count value to be written to the CMP1 register
  * @return None.
  */
-void TCA0_PeriodSet(uint16_t periodVal);
+void TCA0_WO1OffsetSet(uint16_t count);
 
 /**
  * @ingroup tca0_normal
- * @brief Sets the period value in the Period Buffer (PERBUF) register.
- * @pre Initialize the TCA0 with TCA0__Initialize() before calling this API.
- * @param periodVal - Period count value written to the PERBUF register
- * @return None.
+ * @brief Returns the WO1 offset count value.
+ * @param None.
+ * @return Offset count value from the CMP1 register
  */
-void TCA0_PeriodBufferSet(uint16_t periodVal);
+uint16_t TCA0_WO1OffsetGet(void);
 
 /**
  * @ingroup tca0_normal
- * @brief Sets the Compare 0 (CMP0) count value.
- * @pre Initialize the TCA0 with TCA0__Initialize() before calling this API.
- * @param value - Count value written to the CMP0 register
+ * @brief Sets the WO2 offset count value.
+ * @param count - Offset count value to be written to the CMP2 register
  * @return None.
  */
-void TCA0_Compare0Set(uint16_t value);
+void TCA0_WO2OffsetSet(uint16_t count);
 
 /**
  * @ingroup tca0_normal
- * @brief Sets the Compare 0 (CMP0) buffer value.
- * @pre Initialize the TCA0 with TCA0__Initialize() before calling this API.
- * @param value - Count value written to the CMP0BUF register
- * @return None.
+ * @brief Returns the WO2 offset count value.
+ * @param None.
+ * @return Offset count value from the CMP2 register
  */
-void TCA0_Compare0BufferSet(uint16_t value);
-
-/**
- * @ingroup tca0_normal
- * @brief Sets the Compare 1 (CMP1) count value.
- * @pre Initialize the TCA0 with TCA0__Initialize() before calling this API.
- * @param value - Count value written to the CMP1 register
- * @return None.
- */
-void TCA0_Compare1Set(uint16_t value);
-
-/**
- * @ingroup tca0_normal
- * @brief Sets the Compare 1 (CMP1) buffer value.
- * @pre Initialize the TCA0 with TCA0__Initialize() before calling this API.
- * @param value - Count value written to the CMP1BUF register
- * @return None.
- */
-void TCA0_Compare1BufferSet(uint16_t value);
-
-/**
- * @ingroup tca0_normal
- * @brief Sets the Compare 2 (CMP2) count value.
- * @pre Initialize the TCA0 with TCA0__Initialize() before calling this API.
- * @param value - Count value written to the CMP2 register
- * @return None.
- */
-void TCA0_Compare2Set(uint16_t value);
-
-/**
- * @ingroup tca0_normal
- * @brief Sets the Compare 2 (CMP2) buffer value.
- * @pre Initialize the TCA0 with TCA0_Initialize() before calling this API.
- * @param value - Count value written to the CMP2BUF register
- * @return None.
- */
-void TCA0_Compare2BufferSet(uint16_t value);
+uint16_t TCA0_WO2OffsetGet(void);
 
 /**
  * @ingroup tca0_normal

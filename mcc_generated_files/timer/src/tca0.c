@@ -41,19 +41,19 @@ static void (*TCA0_OVFCallback)(void) = NULL;
 
 void TCA0_Initialize(void) 
 {
-    TCA0.SINGLE.CMP0 = 0x0;  // CMP0 0x0
+    TCA0.SINGLE.CMP0 = 0x6A5U;  // CMP0 0x6A5
 
     TCA0.SINGLE.CMP1 = 0x0;  // CMP1 0x0
 
-    TCA0.SINGLE.CMP2 = 0x18FU;  // CMP2 0x18F
+    TCA0.SINGLE.CMP2 = 0x6A5U;  // CMP2 0x6A5
 
     TCA0.SINGLE.CNT = 0x0;  // CNT 0x0
 
     TCA0.SINGLE.CTRLB = (0 << TCA_SINGLE_ALUPD_bp)   // ALUPD disabled
-        | (0 << TCA_SINGLE_CMP0EN_bp)   // CMP0EN disabled
+        | (1 << TCA_SINGLE_CMP0EN_bp)   // CMP0EN enabled
         | (0 << TCA_SINGLE_CMP1EN_bp)   // CMP1EN disabled
         | (1 << TCA_SINGLE_CMP2EN_bp)   // CMP2EN enabled
-        | (TCA_SINGLE_WGMODE_SINGLESLOPE_gc);  // WGMODE SINGLESLOPE
+        | (TCA_SINGLE_WGMODE_FRQ_gc);  // WGMODE FRQ
 
     TCA0.SINGLE.CTRLC = (0 << TCA_SINGLE_CMP0OV_bp)   // CMP0OV disabled
         | (0 << TCA_SINGLE_CMP1OV_bp)   // CMP1OV disabled
@@ -96,7 +96,7 @@ void TCA0_Initialize(void)
         | (0 << TCA_SINGLE_CMP2_bp)   // CMP2 disabled
         | (0 << TCA_SINGLE_OVF_bp);  // OVF disabled
 
-    TCA0.SINGLE.PER = 0x31FU;  // PER 0x31F
+    TCA0.SINGLE.PER = 0x0;  // PER 0x0
 
     TCA0.SINGLE.TEMP = 0x0;  // TEMP 0x0
 
@@ -149,49 +149,34 @@ uint16_t TCA0_CounterGet(void)
     return TCA0.SINGLE.CNT;
 }
 
-void TCA0_PeriodSet(uint16_t periodVal)
+void TCA0_FrequencySet(uint16_t count)
 {
-    TCA0.SINGLE.PER = periodVal;
+    TCA0.SINGLE.CMP0 = count;
 }
 
-void TCA0_PeriodBufferSet(uint16_t periodVal)
+uint16_t TCA0_FrequencyGet(void)
 {
-    TCA0.SINGLE.PERBUF = periodVal;
+    return TCA0.SINGLE.CMP0;
 }
 
-uint16_t TCA0_PeriodGet(void)
+void TCA0_WO1OffsetSet(uint16_t count)
 {
-    return TCA0.SINGLE.PER;
+    TCA0.SINGLE.CMP1 = count;
 }
 
-void TCA0_Compare0Set(uint16_t value)
+uint16_t TCA0_WO1OffsetGet(void)
 {
-    TCA0.SINGLE.CMP0 = value;
+    return TCA0.SINGLE.CMP1;
 }
 
-void TCA0_Compare0BufferSet(uint16_t value)
+void TCA0_WO2OffsetSet(uint16_t count)
 {
-    TCA0.SINGLE.CMP0BUF = value;
+    TCA0.SINGLE.CMP2 = count;
 }
 
-void TCA0_Compare1Set(uint16_t value)
+uint16_t TCA0_WO2OffsetGet(void)
 {
-    TCA0.SINGLE.CMP1 = value;
-}
-
-void TCA0_Compare1BufferSet(uint16_t value)
-{
-    TCA0.SINGLE.CMP1BUF = value;
-}
-
-void TCA0_Compare2Set(uint16_t value)
-{
-    TCA0.SINGLE.CMP2 = value;
-}
-
-void TCA0_Compare2BufferSet(uint16_t value)
-{
-    TCA0.SINGLE.CMP2BUF = value;
+    return TCA0.SINGLE.CMP2;
 }
 
 uint16_t TCA0_MaxCountGet(void)

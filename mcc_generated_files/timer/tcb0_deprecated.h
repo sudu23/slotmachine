@@ -52,11 +52,25 @@
 #define TCB0_Read TCB0_CounterGet
 /**
  * @ingroup tcb0
+ * @brief Defines the Custom Name for the \ref TCB0_CounterGet API.
+ *        The SysTICAndDisplay_Read will be deprecated in the future release. Use SysTICAndDisplay_CounterGet instead.
+ */
+/* cppcheck-suppress misra-c2012-2.5 */
+#define SysTICAndDisplay_Read TCB0_CounterGet
+/**
+ * @ingroup tcb0
  * @brief Defines the Custom Name for the \ref TCB0_CounterSet API.
  *        The TCB0_Write will be deprecated in the future release. Use TCB0_CounterSet instead.
  */
 /* cppcheck-suppress misra-c2012-2.5 */
 #define TCB0_Write TCB0_CounterSet
+/**
+ * @ingroup tcb0
+ * @brief Defines the Custom Name for the \ref TCB0_CounterSet API.
+ *        The SysTICAndDisplay_Write will be deprecated in the future release. Use SysTICAndDisplay_CounterSet instead.
+ */
+/* cppcheck-suppress misra-c2012-2.5 */
+#define SysTICAndDisplay_Write TCB0_CounterSet
 /**
  * @ingroup tcb0
  * @brief Defines the Custom Name for the \ref TCB0_CAPTInterruptEnable API.
@@ -66,11 +80,25 @@
 #define TCB0_EnableCaptInterrupt TCB0_CAPTInterruptEnable
 /**
  * @ingroup tcb0
+ * @brief Defines the Custom Name for the \ref TCB0_CAPTInterruptEnable API.
+ *        The SysTICAndDisplay_EnableCaptInterrupt will be deprecated in the future release. Use SysTICAndDisplay_CAPTInterruptEnable instead.
+ */
+/* cppcheck-suppress misra-c2012-2.5 */
+#define SysTICAndDisplay_EnableCaptInterrupt TCB0_CAPTInterruptEnable
+/**
+ * @ingroup tcb0
  * @brief Defines the Custom Name for the \ref TCB0_CAPTInterruptDisable API.
  *        The TCB0_DisableCaptInterrupt will be deprecated in the future release. Use TCB0_CAPTInterruptDisable instead.
  */
 /* cppcheck-suppress misra-c2012-2.5 */
 #define TCB0_DisableCaptInterrupt TCB0_CAPTInterruptDisable
+/**
+ * @ingroup tcb0
+ * @brief Defines the Custom Name for the \ref TCB0_CAPTInterruptDisable API.
+ *        The SysTICAndDisplay_DisableCaptInterrupt will be deprecated in the future release. Use SysTICAndDisplay_CAPTInterruptDisable instead.
+ */
+/* cppcheck-suppress misra-c2012-2.5 */
+#define SysTICAndDisplay_DisableCaptInterrupt TCB0_CAPTInterruptDisable
 /**
  * @ingroup tcb0
  * @brief Defines the Custom Name for the \ref TCB0_OVFInterruptEnable API.
@@ -80,11 +108,25 @@
 #define TCB0_EnableOvfInterrupt TCB0_OVFInterruptEnable
 /**
  * @ingroup tcb0
+ * @brief Defines the Custom Name for the \ref TCB0_OVFInterruptEnable API.
+ *        The SysTICAndDisplay_EnableOvfInterrupt will be deprecated in the future release. Use SysTICAndDisplay_OVFInterruptEnable instead.
+ */
+/* cppcheck-suppress misra-c2012-2.5 */
+#define SysTICAndDisplay_EnableOvfInterrupt TCB0_OVFInterruptEnable
+/**
+ * @ingroup tcb0
  * @brief Defines the Custom Name for the \ref TCB0_OVFInterruptDisable API.
  *        The TCB0_DisableOvfInterrupt will be deprecated in the future release. Use TCB0_OVFInterruptDisable instead.
  */
 /* cppcheck-suppress misra-c2012-2.5 */
 #define TCB0_DisableOvfInterrupt TCB0_OVFInterruptDisable
+/**
+ * @ingroup tcb0
+ * @brief Defines the Custom Name for the \ref TCB0_OVFInterruptDisable API.
+ *        The SysTICAndDisplay_DisableOvfInterrupt will be deprecated in the future release. Use SysTICAndDisplay_OVFInterruptDisable instead.
+ */
+/* cppcheck-suppress misra-c2012-2.5 */
+#define SysTICAndDisplay_DisableOvfInterrupt TCB0_OVFInterruptDisable
 /**
  * @ingroup tcb0
  * @brief Defines the Custom Name for the \ref TCB0_OverflowStatusClear API.
@@ -94,11 +136,25 @@
 #define TCB0_ClearOvfInterruptFlag TCB0_OverflowStatusClear
 /**
  * @ingroup tcb0
+ * @brief Defines the Custom Name for the \ref TCB0_OverflowStatusClear API.
+ *        The SysTICAndDisplay_ClearOvfInterruptFlag will be deprecated in the future release. Use SysTICAndDisplay_OverflowStatusClear instead.
+ */
+/* cppcheck-suppress misra-c2012-2.5 */
+#define SysTICAndDisplay_ClearOvfInterruptFlag TCB0_OverflowStatusClear
+/**
+ * @ingroup tcb0
  * @brief Defines the Custom Name for the \ref TCB0_CaptureStatusClear API.
  *        The TCB0_ClearCaptInterruptFlag will be deprecated in the future release. Use TCB0_CaptureStatusClear instead.
  */
 /* cppcheck-suppress misra-c2012-2.5 */
 #define TCB0_ClearCaptInterruptFlag TCB0_CaptureStatusClear
+/**
+ * @ingroup tcb0
+ * @brief Defines the Custom Name for the \ref TCB0_CaptureStatusClear API.
+ *        The SysTICAndDisplay_ClearCaptInterruptFlag will be deprecated in the future release. Use SysTICAndDisplay_CaptureStatusClear instead.
+ */
+/* cppcheck-suppress misra-c2012-2.5 */
+#define SysTICAndDisplay_ClearCaptInterruptFlag TCB0_CaptureStatusClear
 /**
  * @ingroup tcb0
  * @brief Defines the Custom Name for the \ref TCB0_OverflowStatusGet API.
@@ -108,11 +164,25 @@
 #define TCB0_IsOvfInterruptFlag TCB0_OverflowStatusGet
 /**
  * @ingroup tcb0
+ * @brief Defines the Custom Name for the \ref TCB0_OverflowStatusGet API.
+ *        The SysTICAndDisplay_IsOvfInterruptFlag will be deprecated in the future release. Use SysTICAndDisplay_OverflowStatusGet instead.
+ */
+/* cppcheck-suppress misra-c2012-2.5 */
+#define SysTICAndDisplay_IsOvfInterruptFlag TCB0_OverflowStatusGet
+/**
+ * @ingroup tcb0
  * @brief Defines the Custom Name for the \ref TCB0_CaptureStatusGet API.
  *        The TCB0_IsCaptInterruptFlag will be deprecated in the future release. Use TCB0_CaptureStatusGet instead.
  */
 /* cppcheck-suppress misra-c2012-2.5 */
 #define TCB0_IsCaptInterruptFlag TCB0_CaptureStatusGet
+/**
+ * @ingroup tcb0
+ * @brief Defines the Custom Name for the \ref TCB0_CaptureStatusGet API.
+ *        The SysTICAndDisplay_IsCaptInterruptFlag will be deprecated in the future release. Use SysTICAndDisplay_CaptureStatusGet instead.
+ */
+/* cppcheck-suppress misra-c2012-2.5 */
+#define SysTICAndDisplay_IsCaptInterruptFlag TCB0_CaptureStatusGet
 /**
  * @ingroup tcb0
  * @brief Defines the Custom Name for the \ref TCB0_Start API.
@@ -122,11 +192,25 @@
 #define TCB0_PWM_Enable TCB0_Start
 /**
  * @ingroup tcb0
+ * @brief Defines the Custom Name for the \ref TCB0_Start API.
+ *        The SysTICAndDisplay_PWM_Enable will be deprecated in the future release. Use SysTICAndDisplay_Start instead.
+ */
+/* cppcheck-suppress misra-c2012-2.5 */
+#define SysTICAndDisplay_PWM_Enable TCB0_Start
+/**
+ * @ingroup tcb0
  * @brief Defines the Custom Name for the \ref TCB0_Stop API.
  *        The TCB0_PWM_Disable will be deprecated in the future release. Use TCB0_Stop instead.
  */
 /* cppcheck-suppress misra-c2012-2.5 */
 #define TCB0_PWM_Disable TCB0_Stop
+/**
+ * @ingroup tcb0
+ * @brief Defines the Custom Name for the \ref TCB0_Stop API.
+ *        The SysTICAndDisplay_PWM_Disable will be deprecated in the future release. Use SysTICAndDisplay_Stop instead.
+ */
+/* cppcheck-suppress misra-c2012-2.5 */
+#define SysTICAndDisplay_PWM_Disable TCB0_Stop
 /**
  * @ingroup tcb0
  * @brief Defines the Custom Name for the \ref TCB0_CounterSet API.
@@ -136,6 +220,13 @@
 #define TCB0_load_counter TCB0_CounterSet
 /**
  * @ingroup tcb0
+ * @brief Defines the Custom Name for the \ref TCB0_CounterSet API.
+ *        The SysTICAndDisplay_load_counter will be deprecated in the future release. Use SysTICAndDisplay_CounterSet instead.
+ */
+/* cppcheck-suppress misra-c2012-2.5 */
+#define SysTICAndDisplay_load_counter TCB0_CounterSet
+/**
+ * @ingroup tcb0
  * @brief Defines the Custom Name for the \ref TCB0_PeriodSet API.
  *        The TCB0_load_top will be deprecated in the future release. Use TCB0_PeriodSet instead.
  */
@@ -143,11 +234,25 @@
 #define TCB0_load_top TCB0_PeriodSet
 /**
  * @ingroup tcb0
+ * @brief Defines the Custom Name for the \ref TCB0_PeriodSet API.
+ *        The SysTICAndDisplay_load_top will be deprecated in the future release. Use SysTICAndDisplay_PeriodSet instead.
+ */
+/* cppcheck-suppress misra-c2012-2.5 */
+#define SysTICAndDisplay_load_top TCB0_PeriodSet
+/**
+ * @ingroup tcb0
  * @brief Defines the Custom Name for the \ref TCB0_DutyCycleSet API.
  *        The TCB0_load_duty_cycle will be deprecated in the future release. Use TCB0_DutyCycleSet instead.
  */
 /* cppcheck-suppress misra-c2012-2.5 */
 #define TCB0_load_duty_cycle TCB0_DutyCycleSet
+/**
+ * @ingroup tcb0
+ * @brief Defines the Custom Name for the \ref TCB0_DutyCycleSet API.
+ *        The SysTICAndDisplay_load_duty_cycle will be deprecated in the future release. Use SysTICAndDisplay_DutyCycleSet instead.
+ */
+/* cppcheck-suppress misra-c2012-2.5 */
+#define SysTICAndDisplay_load_duty_cycle TCB0_DutyCycleSet
 /**
  * @ingroup tcb0
  * @brief Defines a macro to handle deprecated custom data type.
@@ -162,6 +267,6 @@
  *        This macro will be deprecated in the future release.
  */
 /* cppcheck-suppress misra-c2012-2.5 */ 
-#define TCB0_pwm_register_t uint8_t
+#define SysTICAndDisplay_pwm_register_t uint8_t
 
 #endif // TCB0_DEPRECATED_H

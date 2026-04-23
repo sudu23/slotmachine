@@ -57,6 +57,146 @@
  */
 /* cppcheck-suppress misra-c2012-2.5 */
 #define TCB0_CLOCK_FREQ (4000000UL)
+/**
+ * @ingroup tcb0
+ * @brief Defines the Custom Name for the \ref TCB0_MAX_COUNT.
+ */
+/* cppcheck-suppress misra-c2012-2.5 */
+#define SYSTICANDDISPLAY_MAX_COUNT TCB0_MAX_COUNT
+/**
+ * @ingroup tcb0
+ * @brief Defines the Custom Name for the \ref TCB0_CLOCK_FREQ.
+ */
+/* cppcheck-suppress misra-c2012-2.5 */
+#define SYSTICANDDISPLAY_CLOCK_FREQ TCB0_CLOCK_FREQ
+/**
+ * @ingroup timerdriver
+ * @brief Defines the Custom Name for the \ref TCB0_Initialize API
+ */
+ /* cppcheck-suppress misra-c2012-2.5 */
+#define SysTICAndDisplay_Initialize TCB0_Initialize
+/**
+ * @ingroup timerdriver
+ * @brief Defines the Custom Name for the \ref TCB0_Deinitialize API
+ */
+ /* cppcheck-suppress misra-c2012-2.5 */
+#define SysTICAndDisplay_Deinitialize TCB0_Deinitialize
+/**
+ * @ingroup timerdriver
+ * @brief Defines the Custom Name for the \ref TCB0_Start API
+ */
+ /* cppcheck-suppress misra-c2012-2.5 */
+#define SysTICAndDisplay_Start TCB0_Start
+/**
+ * @ingroup timerdriver
+ * @brief Defines the Custom Name for the \ref TCB0_Stop API
+ */
+ /* cppcheck-suppress misra-c2012-2.5 */
+#define SysTICAndDisplay_Stop TCB0_Stop
+/**
+ * @ingroup timerdriver
+ * @brief Defines the Custom Name for the \ref TCB0_CounterGet API
+ */
+ /* cppcheck-suppress misra-c2012-2.5 */
+#define SysTICAndDisplay_CounterGet TCB0_CounterGet
+/**
+ * @ingroup timerdriver
+ * @brief Defines the Custom Name for the \ref TCB0_CounterSet API
+ */
+ /* cppcheck-suppress misra-c2012-2.5 */
+#define SysTICAndDisplay_CounterSet TCB0_CounterSet
+/**
+ * @ingroup timerdriver
+ * @brief Defines the Custom Name for the \ref TCB0_PeriodSet API
+ */
+ /* cppcheck-suppress misra-c2012-2.5 */
+#define SysTICAndDisplay_PeriodSet TCB0_PeriodSet
+/**
+ * @ingroup timerdriver
+ * @brief Defines the Custom Name for the \ref TCB0_PeriodGet API
+ */
+ /* cppcheck-suppress misra-c2012-2.5 */
+#define SysTICAndDisplay_PeriodGet TCB0_PeriodGet
+/**
+ * @ingroup timerdriver
+ * @brief Defines the Custom Name for the \ref TCB0_MaxCountGet API
+ */
+ /* cppcheck-suppress misra-c2012-2.5 */
+#define SysTICAndDisplay_MaxCountGet TCB0_MaxCountGet
+/**
+ * @ingroup timerdriver
+ * @brief Defines the Custom Name for the \ref TCB0_CAPTInterruptEnable API
+ */
+ /* cppcheck-suppress misra-c2012-2.5 */
+#define SysTICAndDisplay_CAPTInterruptEnable TCB0_CAPTInterruptEnable
+/**
+ * @ingroup timerdriver
+ * @brief Defines the Custom Name for the \ref TCB0_EnableOvfInterrupt API
+ */
+ /* cppcheck-suppress misra-c2012-2.5 */
+#define SysTICAndDisplay_OVFInterruptEnable TCB0_OVFInterruptEnable
+/**
+ * @ingroup timerdriver
+ * @brief Defines the Custom Name for the \ref TCB0_CAPTInterruptDisable API
+ */
+ /* cppcheck-suppress misra-c2012-2.5 */
+#define SysTICAndDisplay_CAPTInterruptDisable TCB0_CAPTInterruptDisable
+/**
+ * @ingroup timerdriver
+ * @brief Defines the Custom Name for the \ref TCB0_OVFInterruptDisable API
+ */
+ /* cppcheck-suppress misra-c2012-2.5 */
+#define SysTICAndDisplay_OVFInterruptDisable TCB0_OVFInterruptDisable
+/**
+ * @ingroup timerdriver
+ * @brief Defines the Custom Name for the \ref TCB0_IsOvfInterruptFlag API
+ */
+ /* cppcheck-suppress misra-c2012-2.5 */
+#define SysTICAndDisplay_OverflowStatusGet TCB0_OverflowStatusGet
+/**
+ * @ingroup timerdriver
+ * @brief Defines the Custom Name for the \ref TCB0_CaptureStatusGet API
+ */
+ /* cppcheck-suppress misra-c2012-2.5 */
+#define SysTICAndDisplay_CaptureStatusGet TCB0_CaptureStatusGet
+/**
+ * @ingroup timerdriver
+ * @brief Defines the Custom Name for the \ref TCB0_ClearCaptInterruptFlag API
+ */
+ /* cppcheck-suppress misra-c2012-2.5 */
+#define SysTICAndDisplay_CaptureStatusClear TCB0_CaptureStatusClear
+/**
+ * @ingroup timerdriver
+ * @brief Defines the Custom Name for the \ref TCB0_OverflowStatusClear API
+ */
+ /* cppcheck-suppress misra-c2012-2.5 */
+#define SysTICAndDisplay_OverflowStatusClear TCB0_OverflowStatusClear
+/**
+ * @ingroup timerdriver
+ * @brief Defines the Custom Name for the \ref TCB0_OverflowCallbackRegister API
+ */
+ /* cppcheck-suppress misra-c2012-2.5 */
+#define SysTICAndDisplay_OverflowCallbackRegister TCB0_OverflowCallbackRegister
+/**
+ * @ingroup timerdriver
+ * @brief Defines the Custom Name for the \ref TCB0_CaptureCallbackRegister API
+ */
+ /* cppcheck-suppress misra-c2012-2.5 */
+#define SysTICAndDisplay_CaptureCallbackRegister TCB0_CaptureCallbackRegister
+/**
+ * @ingroup tcb0
+ * @brief Defines the Custom Name for the \ref TCB0_IsCaptInterruptEnabled API.
+ *        This macro will be deprecated in the future release.
+ */
+ /* cppcheck-suppress misra-c2012-2.5 */
+#define SysTICAndDisplay_IsCaptInterruptEnabled TCB0_IsCaptInterruptEnabled
+/**
+ * @ingroup tcb0
+ * @brief Defines the Custom Name for the \ref TCB0_IsOvfInterruptEnabled API.
+ *        This macro will be deprecated in the future release.
+ */
+ /* cppcheck-suppress misra-c2012-2.5 */ 
+#define SysTICAndDisplay_IsOvfInterruptEnabled TCB0_IsOvfInterruptEnabled
 
 /**
  * @ingroup tcb0

@@ -40,6 +40,7 @@ void SYSTEM_Initialize(void)
     PIN_MANAGER_Initialize();
     TCA0_Initialize();
     TCB0_Initialize();
+    TCB1_Initialize();
     CPUINT_Initialize();
 }
 

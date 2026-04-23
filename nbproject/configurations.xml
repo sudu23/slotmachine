@@ -35,17 +35,20 @@
           <itemPath>mcc_generated_files/timer/tcb0_deprecated.h</itemPath>
           <itemPath>mcc_generated_files/timer/tca0.h</itemPath>
           <itemPath>mcc_generated_files/timer/tca0_deprecated.h</itemPath>
+          <itemPath>mcc_generated_files/timer/tcb1_deprecated.h</itemPath>
+          <itemPath>mcc_generated_files/timer/tcb1.h</itemPath>
         </logicalFolder>
       </logicalFolder>
       <itemPath>main.h</itemPath>
       <itemPath>wuerfel.h</itemPath>
       <itemPath>slotmachine.h</itemPath>
+      <itemPath>audio.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
                    projectFiles="true">
       <itemPath>Makefile</itemPath>
-      <itemPath>Slotmachine_V2.0.mc3</itemPath>
+      <itemPath>Slotmachine.mc3</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -72,12 +75,14 @@
             <itemPath>mcc_generated_files/timer/src/delay.c</itemPath>
             <itemPath>mcc_generated_files/timer/src/tcb0.c</itemPath>
             <itemPath>mcc_generated_files/timer/src/tca0.c</itemPath>
+            <itemPath>mcc_generated_files/timer/src/tcb1.c</itemPath>
           </logicalFolder>
         </logicalFolder>
       </logicalFolder>
       <itemPath>main.c</itemPath>
       <itemPath>wuerfel.c</itemPath>
       <itemPath>slotmachine.c</itemPath>
+      <itemPath>audio.c</itemPath>
     </logicalFolder>
   </logicalFolder>
   <sourceRootList>
@@ -98,7 +103,7 @@
         <platform>3</platform>
       </toolsSet>
       <packs>
-        <pack name="AVR-Dx_DFP" vendor="Microchip" version="2.7.321"/>
+        <pack name="AVR-Dx_DFP" vendor="Microchip" version="2.8.343"/>
       </packs>
       <ScriptingSettings>
       </ScriptingSettings>
@@ -237,7 +242,7 @@
         <property key="debugoptions.debug-startup" value="Use system settings"/>
         <property key="debugoptions.reset-behaviour" value="Use system settings"/>
         <property key="debugoptions.simultaneous.debug" value="false"/>
-        <property key="debugoptions.useswbreakpoints" value="false"/>
+        <property key="debugoptions.useswbreakpoints" value="true"/>
         <property key="event.recorder.debugger.behavior" value="Running"/>
         <property key="event.recorder.enabled" value="false"/>
         <property key="event.recorder.scvd.files" value=""/>
@@ -328,7 +333,7 @@
         <property key="debugoptions.debug-startup" value="Use system settings"/>
         <property key="debugoptions.reset-behaviour" value="Use system settings"/>
         <property key="debugoptions.simultaneous.debug" value="false"/>
-        <property key="debugoptions.useswbreakpoints" value="false"/>
+        <property key="debugoptions.useswbreakpoints" value="true"/>
         <property key="event.recorder.debugger.behavior" value="Running"/>
         <property key="event.recorder.enabled" value="false"/>
         <property key="event.recorder.scvd.files" value=""/>
@@ -349,7 +354,7 @@
         <property key="memories.programmemory.ranges" value="0-7fff"/>
         <property key="poweroptions.powerenable" value="false"/>
         <property key="programmerToGoFilePath"
-                  value="C:/Users/bub/Desktop/slotmachine/debug/default/Slotmachine_FW_V2.0_ptg"/>
+                  value="C:/Users/bub/Desktop/avr-workspace/Slotmachine/Slotmachine_V2.0.X/debug/default/Slotmachine_V2.0_ptg"/>
         <property key="programmerToGoImageName" value="Slotmachine_FW_V2.0_ptg"/>
         <property key="programoptions.donoteraseauxmem" value="false"/>
         <property key="programoptions.eraseb4program" value="true"/>

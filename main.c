@@ -35,18 +35,27 @@
 #include "main.h"
 #include "wuerfel.h"
 #include "slotmachine.h"
+#include "audio.h"
 
 uint8_t Mode = 0;
 
+const uint16_t intro_melody[][2] = {
+	{10,0},
+	{D4, 100},
+	{A3, 100},
+	{D4, 100},
+	{Fb4, 100},
+	{D4, 100},
+	{Fb4, 100},
+	{A4, 100},
+	{Fb4, 100},
+	{A4, 100},
+	{D5, 200}	
+};
 /********************************************/
 void setup(void)
 {
-    TCA0_Start();
-    TCA0_PeriodSet(19999);
-    DELAY_milliseconds(200);
-    TCA0_PeriodSet(3999);
-    DELAY_milliseconds(200);
-    TCA0_Stop();
+    AddMelodyToSoundBuffer(intro_melody);
     
     if(PORTA_get_pin_level(0) == true){
         Mode = 0; // Taster nicht gedrueckt: Modus 0 (Würfel)
@@ -73,7 +82,8 @@ int main(void)
 {
     SYSTEM_Initialize();
     
-    TCB0_CaptureCallbackRegister(myISR_TCB0);
+    TCB0_CaptureCallbackRegister(myISR_TCB0);   //SysTIC & Display   
+    TCB1_CaptureCallbackRegister(myISR_TCB1); //Sound
     
     setup();
 
