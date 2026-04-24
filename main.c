@@ -55,13 +55,15 @@ const uint16_t intro_melody[][2] = {
 /********************************************/
 void setup(void)
 {
-    AddMelodyToSoundBuffer(intro_melody);
-    
     if(PORTA_get_pin_level(0) == true){
         Mode = 0; // Taster nicht gedrueckt: Modus 0 (Würfel)
     } else {
         Mode = 1; // Taster gedrueckt beim Start: Modus 1 (Slotmachine)
     }
+    
+    AddMelodyToSoundBuffer(intro_melody);
+    
+    DELAY_milliseconds(1500);
 }
 
 void loop(void)

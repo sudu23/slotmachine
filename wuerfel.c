@@ -7,6 +7,7 @@
 
 #include "mcc_generated_files/system/system.h"
 #include "wuerfel.h" // Muss die extern-Deklarationen enthalten
+#include "audio.h"
 
 #define OFF 0
 #define ON 1
@@ -37,6 +38,14 @@ enum wuerfel_state
     durchwuerfeln,  // Zeigt die schnelle Blink-Animation
     zahl_anzeigen,  // Zeigt das Ergebnis (blinkend)
     result_stay_on  // NEU: Zeigt das Ergebnis statisch an, bis zum naechsten Wurf
+};
+
+static const uint16_t wuerfel_melody[][2] = {
+    {4,0},
+    {D5, 100},
+    {A4, 100},
+    {D5, 100},
+    {Fb5, 200}
 };
 
 // Prototypen (interne Funktionen)
@@ -237,6 +246,8 @@ void Wuerfel_Durchwuerfeln_Animation(unsigned int* zaehler, unsigned int* zufall
         *zaehler = 0;
         // Wechsel zum naechsten Zustand
         *naechster_state = zahl_anzeigen; 
+        
+        AddMelodyToSoundBuffer(wuerfel_melody);
     }
 }
 
@@ -313,7 +324,7 @@ void LoescheLEDs(void)
  * @param naechster_state Zeiger auf den Zustand, der nach Abschluss gesetzt wird.
  */
 void Zeige_Zufalls_Zahl(unsigned int* zaehler, unsigned int zufallszahl_seed, enum wuerfel_state* naechster_state)
-{
+{  
     // Berechne die Augenzahl (1 bis 6) einmalig
     unsigned int augenzahl = (zufallszahl_seed % 6) + 1;
     
